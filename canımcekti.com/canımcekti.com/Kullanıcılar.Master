@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanıcılar.master.cs" Inherits="canımcekti.com.Kullanıcılar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function () {//Komutu ile dosya okuyoruz
+            $("header nav ul li.kategoriler-wrap").mouseover(function () {
+                $("header nav ul li.kategoriler-wrap .kategoriler").css("display","block")
+            })//css ile yazdığımız kodu üzerine gelince görünür yaptık aşağıdada imleç üzerinden ayrılınca görünmez yaptık
+            $("header nav ul li.kategoriler-wrap").mouseleave(function () {
+                $("header nav ul li.kategoriler-wrap .kategoriler").css("display","none")
+            })
+        })
+    </script>
+
+    <link href="Design.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div style="margin-left:20px; height: 53px; width: 1205px; background-color:#fbbb38">
+           <nav class="navgiris">
+                <ul class="navgiris-ul"  >
+                    <li class="navgiris-ul-li">
+                        <a href="Giris.aspx"> Giriş Yap</a>
+                    </li>
+                     <li class="navgiris-ul-li">
+                        <a href="#">Kayıt Ol</a>
+                         
+                    </li >
+                     <li class="navgiris-ul-li">
+                        <a href="#">Admin Girişi</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <header style= " margin-left:20px; height : 116px; width: 1208px; background-color: #ac000b;">
+            <div class="logo">canımcekti.com</div>  
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="Anasayfa.aspx"> Ana Sayfa</a>
+                    </li>
+                     <li class="kategoriler-wrap">
+                        <a href="#">Kategoriler</a>
+                         <div class="kategoriler" >
+                             <ul>
+                                 <li>Döner</li>
+                                 <li>Börek</li>
+                                 <li>Burger</li>
+                                 <li>Pizza</li>
+                                 <li>Çiğ Köfte</li>
+                             </ul>
+                         </div>
+
+                         
+                    </li>
+                     <li>
+                        <a href="#">Canım Sepetim</a>
+                    </li>
+                    <li>
+                        
+                        <select style="font-family:Arial, Helvetica, sans-serif;font-size:15px;">
+                            <option>Lokasyon</option>
+                            <option>Sivas</option>
+                            <option>İstanbul</option>
+                            <option>Ankara</option>
+                            <option>Aydın</option>
+                            <option>Konya</option>
+                            <option>Adana</option>
+                            <option>Elazığ</option>
+
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+            <div class="arama-wrap">
+                <asp:Textbox Id="txtArama" CssClass="txtArama" runat="server" placeholder="Arama" Height="16px" Width="128px"></asp:Textbox>
+                <asp:Button Id="btnArama" CssClass="btnArama" Text="Ara" runat="server" />
+
+            </div>
+            
+        </header>
+
+        <div>
+
+        <div style="float:left; margin-left:90px; height: 389px; width: 263px; margin-top:0px; background-color:#ac000b; clear:both ">
+            <h4 style="color:white;font-family:Arial, Helvetica, sans-serif;;text-align:center">FIRSATLAR</h4>
+            <div style="height: 298px; margin-left:25px;margin-right:25px;background-color:aliceblue; margin-top: 0px;border-radius:6px;">
+                <div>
+                    <br />
+                    <ul><li><a style="color:black;" href="#">duyuru1</a><br />mfsdgdghfjf</li>
+                    </ul>
+                    <ul><li>duyuru1</li></ul>
+                    <ul><li>duyuru1</li></ul>
+                    <ul><li>duyuru1</li></ul>
+                    <ul><li>duyuru1</li></ul>
+                </div>
+            </div>
+        </div>
+            <div style="margin-left:390px; height: 305px; width: 605px; background-color: #99FFCC;margin-top:59px">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            <div style="margin-left:390px; height: 123px; width: 605px; margin-top:30px; background-color: #FF66FF;margin-top:29px;"></div>
+
+        </div>
+
+
+
+     
+        
+          
+         
+        <footer style="margin-left:20px; height: 143px; width: 1208px; margin-top:120px; background-color: #0e0d0d;color:antiquewhite;text-align:center">
+            Tüm Hakları Saklıdır Berna UZUNOĞLU c2019
+        </footer>
+    </form>
+    </body>
+</html>
+
+

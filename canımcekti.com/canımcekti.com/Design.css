@@ -1,0 +1,177 @@
+﻿/********************************************
+Berna UZUNOĞLU
+28 Nisan 2020
+ie6, ff, opera. chrome, safari
+************************************************/
+
+.button{
+    height:40px;
+    width:120px;
+    background-color:#9aa7f1;
+    color:white;
+    font-size:18pt;
+}
+.Label{
+    background-color:#787272;
+    font-size:12pt;
+    color:blue;
+}
+.logo {
+    margin-left: 127px;
+    float: left;
+    background-color: #ffd800;
+    border: 13px solid #ac000b;
+    border-radius: 155px;
+    width: 155px;
+    height: 155px;
+    line-height: 155px;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: #2d4251 5px 5px 5px;
+    position: relative;
+    top: -30px;
+    left: -25px;
+}
+
+ 
+.navgiris {
+    float: right;
+    width: 363px;
+    height: 40px;
+    line-height: 44px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    margin-top: 1px;
+    margin-bottom:auto;
+    top: 65px;
+   
+}
+.navgiris-ul {
+    list-style: none;
+    width: 283px;
+    height: 37px;
+
+ }
+.navgiris-ul-li {
+    float: right;
+    margin-left: 9px;
+
+  }
+
+header .nav {
+    float: left;
+    width: 602px;
+    height: 34px;
+    line-height: 44px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    margin-top: 57px;
+    top: 65px;
+    left: 315px;
+
+}
+  header nav  ul{
+    list-style:none;
+    width: 554px;
+    height: 65px;
+    margin-left: 26px;
+    margin-bottom: 2px;
+
+  }
+    header nav > ul >li {
+        float: left;
+        margin: 0 10px;
+    }
+   
+   header nav ul li.kategoriler-wrap{
+        position:relative;
+
+   }
+    header nav ul li.kategoriler-wrap .kategoriler {
+        position: absolute;
+        width: 150px;
+        height: auto;
+        background-color: #cc0a0a;
+        display: none;
+    }
+    
+
+    header .arama-wrap {
+        float: left;
+        width: 204px;
+        height: 30px;
+        background-color: white;
+        margin-top: 58px;
+        margin-bottom: 15px;
+    }
+    header .arama-wrap .txtArama {
+        float: left;
+        background-color: #edcd1a;
+        border-color: white;
+        padding:10px;
+        margin-top: 0px;
+
+    }
+    header .arama-wrap .btnArama {
+        float: left;
+        border-right: 1px solid aqua;
+        border-left-color:1px solid aqua;
+        width:52px;
+        height:40px;
+
+    }
+.listeleme{
+    margin-left:13px;
+}
+
+a:link {
+    color: white;
+    
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: black;
+}
+a{
+    text-decoration:none;  
+}
+.giris-link {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.giriskayıt-textbox{
+    width:100%;
+    height:25px;
+    border-radius:6px;
+    font-size:15px;
+    font-weight:300;
+    margin-bottom:14px;
+    margin-top:30px;
+    padding:10px;
+}
+.giriskayıt-button {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    Height :31px;
+    Width:95px;
+    border-radius:6px;
+    background-color:#ffdf00;
+    margin-left: 117px;
+}
